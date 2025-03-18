@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-clientes-listar',
   templateUrl: './clientes-listar.component.html',
-  styleUrl: './clientes-listar.component.css'
+  styleUrls: ['./clientes-listar.component.css']
 })
 export class ClientesListarComponent {
   customers = [
@@ -18,3 +19,4 @@ export class ClientesListarComponent {
     this.router.navigate(['/registrar']);
   }
 }
+
