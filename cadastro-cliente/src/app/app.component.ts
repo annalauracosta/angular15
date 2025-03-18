@@ -4,15 +4,15 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'cadastro-cliente';
 
   constructor(private router: Router) {}
-    
-      goToRegister() {
-        this.router.navigate(['/registrar']);
-      }
-    
+
+  goToRegister() {
+    this.router.navigate(['/registrar']);
+  }
 }
+
