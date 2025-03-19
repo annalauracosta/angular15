@@ -19,4 +19,3 @@ export class ClientesListarComponent {
     this.router.navigate(['/registrar']);
   }
 }
-
