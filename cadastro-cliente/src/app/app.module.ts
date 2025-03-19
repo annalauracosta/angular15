@@ -5,21 +5,13 @@ import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
+import { ClientesModule } from './clientes/clientes.module';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
-import { CadastroClienteComponent } from './cadastro-cliente/cadastro-cliente.component';
-import { ClientesListarComponent } from './clientes-listar/clientes-listar.component';
-import { MatCardModule } from '@angular/material/card';
-import { MatInputModule } from '@angular/material/input';
-import { MatListModule } from '@angular/material/list';
-import { MatIconModule } from '@angular/material/icon';
-import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CadastroClienteComponent,
-    ClientesListarComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -28,11 +20,7 @@ import { FormsModule } from '@angular/forms';
     MatButtonModule,
     MatFormFieldModule,
     ReactiveFormsModule,
-    MatCardModule,
-    MatInputModule,
-    MatListModule,
-    MatIconModule,
-    FormsModule
+    ClientesModule
   ],
   providers: [
     provideAnimationsAsync()
@@ -40,4 +28,3 @@ import { FormsModule } from '@angular/forms';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
