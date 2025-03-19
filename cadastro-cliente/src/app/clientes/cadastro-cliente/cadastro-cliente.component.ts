@@ -13,8 +13,8 @@ export class CadastroClienteComponent {
   constructor(private router: Router) {}
 
   register() {
-    console.log('Nome:', this.name); // <--- AQUI: Exibe o nome no console
-    console.log('Idade:', this.age); // <--- AQUI: Exibe a idade no console
+    console.log('Nome:', this.name);
+    console.log('Idade:', this.age);
     alert(`Registro realizado com sucesso!\nNome: ${this.name}\nIdade: ${this.age}`);
   }
 
@@ -22,4 +22,3 @@ export class CadastroClienteComponent {
     this.router.navigate(['/clientes']);
   }
 }
-
