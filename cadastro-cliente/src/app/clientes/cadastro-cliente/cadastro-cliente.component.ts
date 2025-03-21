@@ -4,8 +4,7 @@ import { Component } from '@angular/core';
  @Component({
    selector: 'app-cadastro-cliente',
    templateUrl: './cadastro-cliente.component.html',
-   styleUrls: ['./cadastro-cliente.component.css']
-
+   styleUrl: './cadastro-cliente.component.css'
  })
  export class CadastroClienteComponent {
    name: string = '';
@@ -22,3 +21,5 @@ import { Component } from '@angular/core';
      goToList() {
        this.router.navigate(['/clientes']);
      }
+   
+ }
