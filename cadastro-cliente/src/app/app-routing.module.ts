@@ -4,13 +4,9 @@ import { CadastroClienteComponent } from './clientes/cadastro-cliente/cadastro-c
 import { ClientesListarComponent } from './clientes/clientes-listar/clientes-listar.component';
 
 const routes: Routes = [
-  {path:'',redirectTo:'/clientes',pathMatch:'full'},
-  {
-    path:'registrar',component: CadastroClienteComponent
-  },
-  {
-    path:'clientes',component:ClientesListarComponent
-  }
+  { path: '', redirectTo: '/clientes', pathMatch: 'full' },
+  { path: 'registrar', component: CadastroClienteComponent },
+  { path: 'clientes', component: ClientesListarComponent }
 ];
 
 @NgModule({
