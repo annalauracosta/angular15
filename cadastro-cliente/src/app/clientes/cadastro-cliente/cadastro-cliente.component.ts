@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-cadastro-cliente',
   templateUrl: './cadastro-cliente.component.html',
-  styleUrls: ['./cadastro-cliente.component.css']
+  styleUrl: './cadastro-cliente.component.css'
 })
 export class CadastroClienteComponent {
   name: string = '';
